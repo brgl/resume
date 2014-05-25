@@ -1,0 +1,244 @@
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, graphicx, longtable}
+\usepackage[margin=2.5cm]{geometry}
+
+\title{\bfseries\Huge Bartosz Golaszewski}
+\author{bartekgola@gmail.com}
+\date{}
+
+\definecolor{lightgray}{gray}{0.77}
+\newcolumntype{L}{>{\raggedleft}p{0.17\textwidth}}
+\newcolumntype{R}{p{0.785\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+
+	\begin{minipage}{0.65\textwidth}
+		\begingroup
+		\let\center\flushleft
+		\let\endcenter\endflushleft
+		\maketitle
+		\endgroup
+	\end{minipage}
+	\begin{minipage}{0.3\textwidth}
+		\flushright{\includegraphics[width=3.5cm]{./pict.jpg}}
+	\end{minipage}
+	\vspace{2em}
+	\linebreak
+	\begin{minipage}[ht]{0.68\textwidth}
+		Date and place of birth: June 10, 1987, Bydgoszcz, Poland\\
+		Address: 21 Avenue de Belgique, 06220 Golfe Juan, France\\
+		Phone: +33 658 058 811
+	\end{minipage}
+
+	\vspace{20pt}
+
+\section*{Summary}
+Skilled and competent C/C++ developer with proven expertise in using new tools and
+technologies to deliver high quality software and improve it throughout the entire
+development lifecycle. Currently looking for an interesting, demanding and challenging
+work in the field of embedded systems based on the Linux kernel using C and C++
+programming languages.
+
+\section*{Education}
+\begin{longtable}{L!{\VRule}R}
+2009--2012&
+Graduate studies at the \textbf{Nicolaus Copernicus University in Torun},
+Faculty of Informatics, thesis: \textbf{„Selected data transmission
+security issues in RPC protocols for embedded systems.”} -
+composed of a theoretical part and an example implementation of a
+simple and secure RPC protocol for embedded, low-resource systems,\\[5pt]
+
+X 2008--III 2009&
+Georg-August-Universitaet in Goettingen (Germany) as a fellow of the
+ERASMUS programme,\\[5pt]
+
+2006--2009&
+undergraduate studies at the University of Nicolaus Copernicus
+University in Torun, Faculty of Informatics,\\[5pt]
+
+2003--2006&
+high school giving access to universities and polytechnics in
+Bydgoszcz, german language instruction.
+\end{longtable}
+
+\section*{Professional Experience}
+\begin{longtable}{L!{\VRule}R}
+XI 2012--Present&\textbf{Amadeus IT Group}\\&
+\\&
+\textbf{Duties:}\\&
+Development and support of the \textbf{Service Integrator} project – a fast,
+scalable message bus and \textbf{IPC} system used throughout the Amadeus
+Airline Reservation System infrastructure – using C++ and Python
+programming languages.\\&
+\\&
+\textbf{Key Projects:}\\&
+\underline{MATIP A2:}\\&
+Implemented the MATIP A2 protocol support for the Service Integrator.\\&
+\\&
+\underline{Threading model improvement:}\\&
+Refactored the threading model inside Service Integrator to \textbf{lower
+the latencies} and make it more \textbf{flexible}.\\&
+\\&
+\underline{Security improvements after penetration tests:}\\&
+Implemented several improvements and \textbf{security fixes} according to
+the results of \textbf{penetration tests} performed on Amadeus' infrastructure.\\&
+\\&
+Multitude of bug-fixes and investigations.\\&
+\\
+VIII 2009--X 2012&\textbf{TELDAT Sp. J. Kruszynski \& Cichocki}\\&
+\\&
+\textbf{Duties:}\\&
+Development and support of the Linux-based operating system and its
+applications/drivers running on military telecommunications equipment
+manufactured by the company, using mainly C/C++, Bash and Python
+programming languages.\\&
+\\&
+\textbf{Key Projects:}\\&
+\underline{Internal Operating System version 6:}\\&
+Embedded operating system based on the \textbf{2.6.X/3.X Linux kernel}
+series designed for ARM devices:
+\begin{itemize}
+	\item ported the Linux kernel to a new \textbf{ARM} board based on the
+	Freescale i.MX53 processor – this includes setting up various
+	devices, configuration of the IO multiplexer and adaptation of
+	some of the system code,
+	\item implemented changes in the u-boot bootloader, expanded
+	u-boot internal \textbf{i.MX I2C driver}, added additional functionalities
+	to the booting code,
+	\item expanded the \textbf{AT24} Linux \textbf{EEPROM} driver, by adding new
+	functionalities end extended sysfs interface, implemented
+	the \textbf{Power Managment System} – a C++ application designed to maintain
+	low power consumption by managing suspension of the system,
+	controlling and powering various peripheral devices and interacting
+	with board's \textbf{PMIC},
+	\item developed and supported a library of C++ classes commonly
+	used by most of the applications running in IOSv6, including
+	system logger, configuration files parsers, simple \textbf{socket}
+	interface etc.,
+	\item developed and supported a library of C++ classes providing an
+	interface between C++ and Python code, allowing easy
+	\textbf{embedding of Python scripts} inside C++ applications.
+\end{itemize}
+\\&
+\underline{Internal Operating System version 4:}\\&
+Older embedded operating system based on the \textbf{2.4 Linux} series and
+running mostly on military \textbf{VoIP} and phone exchange systems:
+\begin{itemize}
+	\item implemented a new version of the internal software watchdog
+	and system manager for IOSv4 – C++ daemon meant to be fully
+	configurable and robust,
+	\item implemented the \textbf{Voice Recording System} for VoIP and radio
+	transmissions, expanded the functionality of the \textbf{ESD sound
+	daemon} and developed an application retrieving data from the
+	sound server and storing it (including its metadata) as .ogg files
+	in a distributed environment,
+	\item developed and implemented a distributed configuration system
+	for \textbf{VoIP terminals} and \textbf{radio gateways} allowing configuration of these
+	devices using various means of data transmission (\textbf{Ethernet, CAN, RS-232} etc.),
+	\item backported \textbf{Winbond 83627H/HF watchdog driver} to 2.4 kernel,
+	\item developed and implemented an interface (written in C++) between
+	user and \textbf{Sendmail} daemon, allowing for easy configuration of mail
+	services by translating user XML input to Sendmail configuration syntax,
+	\item implemented a set of Bash scripts for the \textbf{Remote Update System}.
+\end{itemize}
+\\&
+\underline{Vehicle Information Interface:}\\&
+Java Web-service based application providing information about
+various parameters of military vehicles to the \textbf{BMS} (Battlefield
+Managment System):
+\begin{itemize}
+	\item  implemented crucial low-level routines in \textbf{C} and wrapped them
+	in Java classes using \textbf{Java Native Interface}.
+\end{itemize}
+\\&
+\underline{Teldat Routing Protocol:}\\&
+\textbf{Routing protocol} and its implementation designed specifically for
+low bandwith \textbf{HF/UHF radio networks}:
+\begin{itemize}
+	\item took part in development of the protocol,
+	\item was part of the development team implementing the protocol
+	as a \textbf{Quagga daemon}.
+\end{itemize}
+\end{longtable}
+
+\section*{Open source activity}
+\begin{itemize}
+	\item Several merged patches for \textbf{busybox} and \textbf{uClibc} projects,
+	\item proposed the introduction of a unit-tests framework for busybox,
+	currently under development,
+	\item author of the \textbf{busybus} – a lightweight, portable and simple message bus (like
+	dbus) for embedded systems without any external dependencies other than a unix-ike
+	libc - this is an indirect continuation of the aformentioned master thesis,
+	\item smaller projects hosted on \textbf{github} – username: brgl.
+\end{itemize}
+
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+Polish&native speaker (mother tongue),\\
+English&fluent in speaking and writing (C1 level on the CEFR scale),\\
+German&fluent in speaking and writing (total of four years of documented residence
+and education in Germany),\\
+French&intermediate spoken knowledge (16 months of documented residence in France).\\
+\end{tabular}
+
+\section*{Technical skills and competencies}
+\begin{itemize}
+	\item fluent knowledge of \textbf{C} and \textbf{C++} programming languages and object-oriented
+	programming paradigm,
+	\item knowledge and practical usage of the following libraries: \textbf{STL, Glibc, Openssl,
+	Boost, Qt, libxml2, libpython, cURL,}
+	\item thorough knowledge of issues related to \textbf{Linux} (socket and multithreaded
+	programming, \textbf{kernel space} programming, knowledge of compilation and library
+	creation mechanisms using the \textbf{Make} and \textbf{Autotools} packages, experience in
+	using the \textbf{POSIX API}), an excellent practical usage of the \textbf{GNU tools}, several
+	years of experience working with many Linux distributions,
+	\item experience in programming for the \textbf{ARM} architecture, knowledge of \textbf{cross-
+	compilation} mechanisms and experience in porting of systems based on Linux
+	kernel to new devices, experience in using \textbf{Buildroot, Crosstool-ng} and \textbf{Busybox}
+	tools, knowledge of the \textbf{U-Boot} bootloader's internals,
+	\item knowledge of the API and skill in Linux kernel module programming, programmed
+	device drivers for \textbf{GPIO} and \textbf{I2C} devices, experience in kernel code debugging,
+	\item knowledge of the following scripting languages: \textbf{Shell, Bash, Python} (including
+	the \textbf{Python C API}, experience in the development of applications written in C
+	using embedded components written in Python),
+	\item good knowledge of the \textbf{AT\&T} and \textbf{NASM x86 assemblers}, basic experience in
+	low-level programming (usage of the inline assembler in \textbf{GCC}), experience in low-
+	level debugging using \textbf{gdb},
+	\item knowledge and experience in the use of \textbf{CVS, SVN, Mercurial} and \textbf{GIT} version
+	control systems,
+	\item \textbf{UML} knowledge and experience with \textbf{Enterprise Architect},
+	knowledge of the \textbf{Java} programming language, experience with web-service based
+	applications,
+	\item good knowledge of the subject of relational databases, practical experience using
+	\textbf{MySQL} and \textbf{SQLite} databases.
+\end{itemize}
+
+\section*{Completed courses}
+\begin{itemize}
+	\item Advanced Programming in C++ – InfoTraining (www.infotraining.pl),
+	\item Design Patterns in C++ – InfoTraining (www.infotraining.pl),
+	\item Linux in Embedded Systems (SoC) – ALX (www.alx.pl),
+	\item short-term military training for students, specialty: radiocommunications – Military
+	Communications Institute in Zegrze (Poland).
+\end{itemize}
+
+\section*{Additional information}
+\begin{itemize}
+	\item driving license,
+	\item ability to work independently and within a team,
+	\item ability to program from specification,
+	\item creativity and inventiveness,
+	\item diligence, punctuality, credibility, reliability and loyalty,
+	\item ability to quickly master new technologies,
+	\item ability to work under time pressure and hardship conditions,
+	\item readiness and willingness to travel on demand (should a need arise).
+\end{itemize}
+
+\section*{Interests}
+\begin{itemize}
+	\item music (an active musician and chorister),
+	\item sports (skiing).
+\end{itemize}
+
+\end{document}
