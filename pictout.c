@@ -1250,13 +1250,11 @@ int main(int argc, char** argv)
 	}
 
 	wrtn = write(fd, picture, picture_size);
+	close(fd);
 	if (wrtn != picture_size) {
 		perror("write: ");
-		close(fd);
 		return EXIT_FAILURE;
 	}
-
-	close(fd);
 
 	return EXIT_SUCCESS;
 }
